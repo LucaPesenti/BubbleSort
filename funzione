@@ -1,4 +1,5 @@
-void scambia(int a, int b){
+void scambia(int &a, int &b){
+  Int c;
   c=a;
   a=b;
   b=c;
