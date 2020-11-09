@@ -7,13 +7,13 @@ void scambia(int &a, int &b){
 }
 
 void bubblesort(int v[], int dim){
-  int k=dim;
+  int k=dim-1;
   bool scambio=true;
   while(scambio==true){
     scambio=false;
     for(int j=0;j<k;j++){
       if(v[j]>v[j+1]){
-        scambia(v[j],v[j+1]);
+        scambia=true;
       }
     }
     k--;
