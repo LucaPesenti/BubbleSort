@@ -1,0 +1,21 @@
+void scambia(int a, int b){
+  c=a;
+  a=b;
+  b=c;
+  return;
+}
+
+void bubblesort(int v[], int dim){
+  int k=dim;
+  bool scambio=true;
+  while(scambio==true){
+    scambio=false;
+    for(int j=0;j<k;j++){
+      if(v[j]>v[j+1]){
+        scambia(v[j],v[j+1]);
+      }
+    }
+    k--;
+  }
+  return;
+}
